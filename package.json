@@ -1,0 +1,19 @@
+{
+  "name": "passportization",
+  "version": "1.0.0",
+  "description": "Сайт пасспортизации реконструируемых комплексов",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:Bargamut/passportization.git",
+  "author": "Paul Petrov <paul@bargamut.ru>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "path": "^0.12.7",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
