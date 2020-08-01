@@ -11,11 +11,12 @@
 	--b-color-2: #99AFCF;
 }
 
-html, body {
+html,
+body {
 	margin: 0;
 	background-color: var(--bg-color);
 	box-sizing: border-box;
-	font-family: Roboto,Arial,sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 }
 
 .wrapper {
@@ -33,11 +34,11 @@ html, body {
 	border: 1px solid var(--b-color-2);
 	border-radius: 0 0 5px 5px;
 	border-top: 0;
-	box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.141), 0 1px 3px 0 rgba(0,0,0,0.122);
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
 }
 
 .site-header__title {
-	font-family: 'Google Sans',Roboto,Arial,sans-serif;
+	font-family: 'Google Sans', Roboto, Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -56,7 +57,7 @@ html, body {
 	position: relative;
 	margin: 10px 0;
 	padding: 10px 20px;
-	background-color:#fff;
+	background-color: #fff;
 	border: 1px solid var(--b-color-2);
 	border-radius: 5px;
 }
@@ -69,8 +70,26 @@ html, body {
 
 .body-part__head {
 	margin-left: 30px;
-	font-family: 'Google Sans',Roboto,Arial,sans-serif;
+	font-family: 'Google Sans', Roboto, Arial, sans-serif;
 	font-weight: normal;
+}
+
+.body-part__content {
+	padding: 0 30px;
+}
+
+.items-list {
+	padding: 0 1rem;
+	list-style: none;
+}
+
+.items-list__item {
+	margin: 1rem 0;
+	padding-left: 2rem;
+	background-image: url('/assets/decor/hat.png');
+	background-position: 0 0;
+	background-size: 1.6rem 1.6rem;
+	background-repeat: no-repeat;
 }
 
 .pulse-question {
@@ -90,7 +109,7 @@ html, body {
 	color: #7b8057;
 	text-align: center;
 	text-decoration: none;
-	box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.141), 0 1px 3px 0 rgba(0,0,0,0.122);
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
 }
 
 .button--dark {
@@ -110,7 +129,7 @@ html, body {
 
 .pulse-call__head {
 	margin-left: 30px;
-	font-family: 'Google Sans',Roboto,Arial,sans-serif;
+	font-family: 'Google Sans', Roboto, Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -121,9 +140,9 @@ html, body {
 }
 
 .pulse-balance__item {
-	padding: 10px 20px;
+	padding: 10px;
 	width: 40%;
-	background-color:#fff;
+	background-color: #fff;
 	border-radius: 5px;
 }
 
@@ -133,6 +152,90 @@ html, body {
 
 .balance-item__right {
 	border: 1px solid var(--color-2);
+}
+
+.call-to-action {
+	text-align: center;
+}
+
+.project-helpers-list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.project-helpers-list__item {
+	margin: 15px 0;
+	padding: 5px;
+	color: var(--main-color);
+	text-align: center;
+	flex-basis: 200px;
+	flex-grow: 1;
+	border-bottom: 1px solid var(--bg-color);
+}
+
+.project-helpers-list__link {
+	text-decoration: none;
+	display: block;
+	position: relative;
+}
+
+.project-helpers-list__link:before {
+	content: '';
+	height: 30px;
+	width: 50px;
+	margin: 0 auto;
+	display: block;
+	background:
+		url('/assets/decor/star.png') left/1rem no-repeat,
+		url('/assets/decor/star.png') center/1.5rem no-repeat,
+		url('/assets/decor/star.png') right/1rem no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.project-helpers-list__image {
+	margin-bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.become-helper {
+	margin: 35px 0;
+	padding: 5px;
+	text-align: center;
+	border-bottom: 1px solid var(--bg-color);
+}
+
+.become-helper__title {
+	margin: 10px 0 20px;
+	color: var(--main-color);
+}
+
+.become-helper__link {
+	text-decoration: none;
+	display: block;
+}
+
+.become-helper__image {
+	margin: 0 auto 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 10px double var(--color-1);
+	display: block;
+	background-color: white;
+}
+
+.become-helper__description {
+	font-weight: normal;
+	color: black;
 }
 
 .pulse-beat {
@@ -150,7 +253,7 @@ html, body {
 .pulse-beat:after {
 	display: block;
 	content: '';
-	background: url('/assets/decor/pulse1.1.2.png') 100%/contain no-repeat;
+	background: url('/assets/decor/pulse.png') 100%/contain no-repeat;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -167,7 +270,7 @@ html, body {
 	margin: auto;
 	height: 100px;
 	width: 100%;
-	background: url('/assets/decor/pulse1.1.2.png') 100%/contain no-repeat;
+	background: url('/assets/decor/pulse.png') 100%/contain no-repeat;
 	animation: 5s pulse linear infinite;
 }
 

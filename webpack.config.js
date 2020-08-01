@@ -19,7 +19,9 @@ let conf = {
 	},
 	devServer: {
 		// Показывать ошибки компиляции в браузере
-		overlay: true
+		overlay: true,
+		contentBase: path.resolve(__dirname, './markup'),
+		compress: true,
 	},
 	module: {
 		rules: [
