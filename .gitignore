@@ -117,3 +117,5 @@ typings/
 
 static-sources/
 dist/assets/content/helpers/*
+dist/bundle.js
+dist/main.css
