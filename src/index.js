@@ -8,6 +8,8 @@ import './style.css';
 	const helpersData = await fetchHelpers.json();
 
 	helpersData.forEach((item) => {
+    if (!item.isActive) return;
+
     const fullName = item.nickName
       ? `${item.firstName} "${item.nickName}" ${item.lastName}`
       : `${item.firstName} ${item.lastName}`;
