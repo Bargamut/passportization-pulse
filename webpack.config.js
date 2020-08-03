@@ -1,26 +1,22 @@
 let path = require('path');
 
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"),
-	isDevMode = process.env.NODE_ENV !== 'production';
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const isDevMode = process.env.NODE_ENV !== 'production';
 
 let conf = {
 	// Точка(-и) входа
-	entry: [
-		'./src/index.js',
-		'./src/mainpage.css',
-		'./src/page.css'
-	],
+	entry: './src/index.js',
 	// Точка выхода
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		filename: 'main.js',
+		filename: 'bundle.js',
 		// Относительный адрес ссылки на файлы с ресурсами для dev-сервера
-		publicPath: 'dist/'
+		publicPath: '/'
 	},
 	devServer: {
 		// Показывать ошибки компиляции в браузере
 		overlay: true,
-		contentBase: path.resolve(__dirname, './markup'),
+		contentBase: path.resolve(__dirname, './dist'),
 		compress: true,
 	},
 	module: {
@@ -34,7 +30,11 @@ let conf = {
 			{
 				test: /\.css$/,
 				use: [{
-						loader: isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: isDevMode,
+              esModule: true,
+            }
 					},
 					"css-loader"
 				]
@@ -42,7 +42,9 @@ let conf = {
 		]
 	},
 	plugins: [
-		new MiniCssExtractPlugin()
+		new MiniCssExtractPlugin({
+      filename: '[name].css',
+    })
 	]
 };
 
