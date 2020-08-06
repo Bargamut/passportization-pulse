@@ -1,0 +1,31 @@
+html,
+body {
+	margin: 0;
+	background-color: var(--bg-color);
+	box-sizing: border-box;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 50%;
+	min-width: 350px;
+	max-width: 900px;
+}
+
+.break-line {
+	height: 1px;
+	background: linear-gradient(90deg, transparent, var(--main-color), transparent);
+	border: 0;
+}
+
+.pulse-question {
+	text-align: center;
+	color: var(--main-color);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.call-to-action {
+	text-align: center;
+}
