@@ -7,14 +7,13 @@
 .pulse-balance__item {
 	padding: 10px;
 	width: 40%;
-	background-color: #fff;
-	border-radius: 5px;
+  background: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .balance-item__left {
-	border: 1px solid #9AA34F;
+	color: #489237;
 }
 
 .balance-item__right {
-	border: 1px solid var(--color-2);
+	color: var(--color-2);
 }
