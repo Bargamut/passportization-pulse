@@ -1,0 +1,13 @@
+[{
+    "isActive": true,
+    "tags": [ "support-info" ],
+		"socials": {
+			"vk": "#"
+		},
+		"avatar": {
+			"image": "https://picsum.photos/100?random=2"
+		},
+    "title": "Lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officiis?"
+  }
+]

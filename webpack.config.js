@@ -16,8 +16,19 @@ let conf = {
 	devServer: {
 		// Показывать ошибки компиляции в браузере
 		overlay: true,
-		contentBase: path.resolve(__dirname, './dist'),
-		compress: true,
+		contentBase: [
+      path.resolve(__dirname, './api'),
+      path.resolve(__dirname, './dist')
+    ],
+    compress: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        pathRewrite: {
+          '^/api': '',
+        },
+      }
+    }
 	},
 	module: {
 		rules: [
