@@ -5,7 +5,7 @@
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	background-color: #fff;
-	color: #7b8057;
+  color: var(--main-color);
 	text-align: center;
 	text-decoration: none;
 	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
@@ -13,12 +13,7 @@
 
 .button--dark {
 	background-color: var(--color-1);
-	color: #fff;
-}
-
-.button--call2action {
-  background-color: var(--color-3);
-  color: black;
+  color: #fff;
 }
 
 .button:hover {
