@@ -11,13 +11,13 @@ import {
 
   dataHelpersListElement.append(
     renderHumans(
-      await fetchHelpers(`/data-helpers.json`)
+      await fetchHelpers(`/api/data-helpers.json`)
     )
   );
 
   infoHelpersListElement.append(
     renderEvents(
-      await fetchHelpers(`/data-helpers__info.json`)
+      await fetchHelpers(`/api/data-helpers__info.json`)
     )
   );
 })();
