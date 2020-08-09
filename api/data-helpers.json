@@ -1,0 +1,14 @@
+[{
+    "isActive": true,
+    "tags": [ "tag1", "tag2" ],
+    "socials": {
+      "vk": "#"
+    },
+    "avatar": {
+      "image": "https://picsum.photos/100?random=1"
+    },
+    "firstName": "Lorem",
+    "lastName": "Ipsum",
+    "nickName": "Banagava"
+  }
+]
