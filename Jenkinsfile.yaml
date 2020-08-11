@@ -1,5 +1,6 @@
 # Pipeline As YAML - Jenkins plugin
 # See more: https://plugins.jenkins.io/pipeline-as-yaml/
+
 pipeline:
   agent:
     label: 'master'
