@@ -8,6 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "test": "jest --passWithNoTests",
+    "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
@@ -15,8 +17,12 @@
     "@babel/core": "^7.2.2",
     "@babel/plugin-transform-runtime": "7.11.0",
     "@babel/preset-env": "^7.3.1",
+    "@types/jest": "26.0.9",
+    "babel-jest": "26.3.0",
     "babel-loader": "^8.0.5",
+    "coveralls": "3.1.0",
     "css-loader": "^2.1.0",
+    "jest": "26.3.0",
     "mini-css-extract-plugin": "^0.5.0",
     "path": "^0.12.7",
     "style-loader": "^0.23.1",
