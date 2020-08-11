@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests",
-    "test::coveralls": "npm test -- --coverage-reporters=text-lcov | coveralls",
+    "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
