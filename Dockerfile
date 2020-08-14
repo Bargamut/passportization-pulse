@@ -31,5 +31,6 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy build files from first image to nginx dir
 COPY --from=builder /usr/src/app/dist/ /usr/share/nginx/html/
+COPY --from=builder /usr/src/app/api /usr/share/nginx/html/
 
 CMD ["nginx", "-g", "daemon off;"]
