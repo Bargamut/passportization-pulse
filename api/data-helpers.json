@@ -1,6 +1,6 @@
 [{
     "isActive": true,
-    "tags": [],
+    "tags": [ "reviewer" ],
     "socials": {
       "vk": "//vk.com/viviyena"
     },
@@ -13,7 +13,7 @@
   },
   {
     "isActive": true,
-    "tags": [],
+    "tags": [ "reviewer" ],
     "socials": {
       "vk": "//vk.com/id78241"
     },
@@ -26,7 +26,7 @@
   },
   {
     "isActive": true,
-    "tags": [],
+    "tags": [ "reviewer" ],
     "socials": {
       "vk": "//vk.com/id5325250"
     },
@@ -38,7 +38,7 @@
   },
   {
     "isActive": true,
-    "tags": [],
+    "tags": [ "reviewer", "info-partner" ],
     "socials": {
       "vk": "//vk.com/dimclie"
     },
@@ -50,7 +50,7 @@
   },
   {
     "isActive": true,
-    "tags": [],
+    "tags": [ "reviewer" ],
     "socials": {
       "vk": "//vk.com/kara_puz"
     },
