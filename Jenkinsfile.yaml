@@ -7,22 +7,23 @@ pipeline:
   tools:
     nodejs: NodeJS 13.12.0
   stages:
+    - stage: Install
+      steps:
+        - sh 'npm install'
     - stage: Tests
       stages:
         - stage: Start tests
           steps:
-            - echo "====++++executing Start tests++++===="
-            - sh 'npm install'
-            - sh 'npm test'
+            script:
+              - echo "====++++executing Start tests++++===="
+              - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
+                script:
+                  - sh 'npm run test::coverage'
           post:
             always:
-              - echo "====++++always++++===="
+              - echo "====++++Start tests execution always++++===="
             success:
-              script:
-                - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
-                  script:
-                    - echo "====++++Start tests executed successfully++++===="
-                    - sh 'npm run test::coverage'
+              - echo "====++++Start tests execution successfully++++===="
             failure:
               - echo "====++++Start tests execution failed++++===="
     - stage: Build & deploy

@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "test": "jest",
     "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
