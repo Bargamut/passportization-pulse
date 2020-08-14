@@ -5,7 +5,7 @@
       "vk": "//vk.com/viviyena"
     },
     "avatar": {
-      "image": "assets/content/helpers/shamonina.jpg"
+      "image": "/assets/content/helpers/shamonina.jpg"
     },
     "firstName": "Анастасия",
     "lastName": "Шамонина",
@@ -18,7 +18,7 @@
       "vk": "//vk.com/id78241"
     },
     "avatar": {
-      "image": "assets/content/helpers/bagaev.jpg"
+      "image": "/assets/content/helpers/bagaev.jpg"
     },
     "firstName": "Михаил",
     "lastName": "Багаев",
@@ -31,7 +31,7 @@
       "vk": "//vk.com/id5325250"
     },
     "avatar": {
-      "image": "assets/content/helpers/bjork.jpg"
+      "image": "/assets/content/helpers/bjork.jpg"
     },
     "firstName": "Анна",
     "lastName": "Бьёрк"
@@ -43,7 +43,7 @@
       "vk": "//vk.com/dimclie"
     },
     "avatar": {
-      "image": "assets/content/helpers/butin.jpg"
+      "image": "/assets/content/helpers/butin.jpg"
     },
     "firstName": "Дмитрий",
     "lastName": "Бутин"
@@ -55,7 +55,7 @@
       "vk": "//vk.com/kara_puz"
     },
     "avatar": {
-      "image": "assets/content/helpers/oreshenko.jpg"
+      "image": "/assets/content/helpers/oreshenko.jpg"
     },
     "firstName": "Андрей",
     "lastName": "Орещенко"
