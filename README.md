@@ -1,5 +1,5 @@
 # Пульс паспортизации
-[![Coverage Status](https://coveralls.io/repos/github/Bargamut/passportization/badge.svg)](https://coveralls.io/github/Bargamut/passportization)
+[![Coverage Status](https://coveralls.io/repos/github/Bargamut/passportization/badge.svg?branch=master)](https://coveralls.io/github/Bargamut/passportization?branch=master)
 
 ## Что это?
 
