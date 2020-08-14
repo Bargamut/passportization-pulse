@@ -2,12 +2,24 @@
     "isActive": true,
     "tags": [ "support-info" ],
 		"socials": {
-			"vk": "#"
+			"vk": "//vk.com/russianfortress"
 		},
 		"avatar": {
-			"image": "https://picsum.photos/100?random=2"
+			"image": "assets/content/helpers/events/russianfortress.jpg"
 		},
-    "title": "Lorem Ipsum",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officiis?"
-  }
+    "title": "Русская крепость",
+    "description": "Всероссийский военно-исторический фестиваль групп реконструкции Средневековья"
+  },
+  {
+    "isActive": true,
+    "tags": [ "support-info" ],
+		"socials": {
+			"vk": "//vk.com/russianfortress"
+		},
+		"avatar": {
+			"image": "assets/content/helpers/events/vl_great_war.jpg"
+		},
+    "title": "В вихрях Гражданской войны",
+    "description": "Фестивали периода Первой Мировой и Гражданской войны в Ленинградской области"
+	}
 ]

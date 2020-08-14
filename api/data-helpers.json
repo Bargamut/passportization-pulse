@@ -1,14 +1,63 @@
 [{
     "isActive": true,
-    "tags": [ "tag1", "tag2" ],
+    "tags": [],
     "socials": {
-      "vk": "#"
+      "vk": "//vk.com/viviyena"
     },
     "avatar": {
-      "image": "https://picsum.photos/100?random=1"
+      "image": "assets/content/helpers/shamonina.jpg"
     },
-    "firstName": "Lorem",
-    "lastName": "Ipsum",
-    "nickName": "Banagava"
+    "firstName": "Анастасия",
+    "lastName": "Шамонина",
+    "nickName": "Вивьена"
+  },
+  {
+    "isActive": true,
+    "tags": [],
+    "socials": {
+      "vk": "//vk.com/id78241"
+    },
+    "avatar": {
+      "image": "assets/content/helpers/bagaev.jpg"
+    },
+    "firstName": "Михаил",
+    "lastName": "Багаев",
+    "nickName": "Святозар"
+  },
+  {
+    "isActive": true,
+    "tags": [],
+    "socials": {
+      "vk": "//vk.com/id5325250"
+    },
+    "avatar": {
+      "image": "assets/content/helpers/bjork.jpg"
+    },
+    "firstName": "Анна",
+    "lastName": "Бьёрк"
+  },
+  {
+    "isActive": true,
+    "tags": [],
+    "socials": {
+      "vk": "//vk.com/dimclie"
+    },
+    "avatar": {
+      "image": "assets/content/helpers/butin.jpg"
+    },
+    "firstName": "Дмитрий",
+    "lastName": "Бутин"
+  },
+  {
+    "isActive": true,
+    "tags": [],
+    "socials": {
+      "vk": "//vk.com/kara_puz"
+    },
+    "avatar": {
+      "image": "assets/content/helpers/oreshenko.jpg"
+    },
+    "firstName": "Андрей",
+    "lastName": "Орещенко"
   }
 ]
