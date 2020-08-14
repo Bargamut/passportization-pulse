@@ -1,6 +1,6 @@
 .site-header {
 	padding: 5px 15px;
-	background-color: var(--main-color);
+	background: var(--main-color) url("/assets/decor/bg-header.png") no-repeat;
 	text-align: center;
 	color: #fff;
 	border: 1px solid var(--b-color-2);
