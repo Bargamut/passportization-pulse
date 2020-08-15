@@ -39,3 +39,22 @@ pipeline:
         - stage: Clean Docker images
           steps:
             - sh 'scripts/clean-images.sh'
+      post:
+        success:
+          script:
+            - withCredentials: "[
+                string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'TELEGRAM_BOT_TOKEN'),
+                string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'TELEGRAM_CHAT_ID')
+              ]"
+              script:
+                - echo "====++++Build & deploy notification SUCCESS++++===="
+                - sh 'scripts/notifications/deploy.sh "Passportization build & deploy **SUCCESS**"'
+        failure:
+          script:
+            - withCredentials: "[
+                string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'TELEGRAM_BOT_TOKEN'),
+                string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'TELEGRAM_CHAT_ID')
+              ]"
+              script:
+                - echo "====++++Build & deploy notification FAILURE++++===="
+                - sh 'scripts/notifications/deploy.sh "Passportization build & deploy **FAILURE**"'
