@@ -47,7 +47,7 @@ pipeline:
                 string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'TELEGRAM_CHAT_ID')
               ]"
               script:
-                - echo "====++++Build & deploy notification SUCCESS++++===="
+                - echo "====++++Build & deploy notification SUCCESS $BUILD_NUMBER ++++===="
                 - sh 'scripts/notifications/deploy.sh "Passportization build & deploy **SUCCESS**"'
         failure:
           script:
@@ -56,5 +56,5 @@ pipeline:
                 string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'TELEGRAM_CHAT_ID')
               ]"
               script:
-                - echo "====++++Build & deploy notification FAILURE++++===="
+                - echo "====++++Build & deploy notification FAILURE $BUILD_NUMBER ++++===="
                 - sh 'scripts/notifications/deploy.sh "Passportization build & deploy **FAILURE**"'
