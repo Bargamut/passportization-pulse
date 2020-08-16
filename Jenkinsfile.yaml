@@ -29,7 +29,7 @@ pipeline:
     - stage: Build & deploy
       # when:
         # - branch 'master'
-      # stages:
+      stages:
         # - stage: Build Docker container
           # steps:
             # - sh 'scripts/build-container.sh'
@@ -37,8 +37,8 @@ pipeline:
         #   steps:
         #     # - sh 'scripts/delivery.sh'
         # - stage: Clean Docker images
-        #   steps:
-            # - sh 'scripts/clean-images.sh'
+          steps:
+            - sh 'scripts/clean-images.sh'
       post:
         success:
           script:
