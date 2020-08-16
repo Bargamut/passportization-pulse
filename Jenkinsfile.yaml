@@ -36,7 +36,7 @@ pipeline:
         # - stage: Delivery
         #   steps:
         #     # - sh 'scripts/delivery.sh'
-        # - stage: Clean Docker images
+        - stage: Clean Docker images
           steps:
             - sh 'scripts/clean-images.sh'
       post:
