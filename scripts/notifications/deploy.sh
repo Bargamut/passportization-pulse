@@ -1,4 +1,7 @@
-wget --no-check-certificate --quiet \
+wget \
+  --no-check-certificate \
+  --quiet \
+  --output-document=/dev/null
   --method POST \
   --timeout=0 \
   --header 'Content-Type: application/json' \
