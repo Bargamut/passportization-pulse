@@ -1,5 +1,3 @@
-ls -lpha
-
 TEXT=$(envsubst < ./scripts/notifications/$1.md)
 
 # TEXT=$(envsubst < ./notifications/success.md)
