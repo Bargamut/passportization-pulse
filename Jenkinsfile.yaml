@@ -9,6 +9,7 @@ pipeline:
   stages:
     - stage: Install
       steps:
+        - echo "$BUILD_NUMBER"
         - sh 'npm install'
     - stage: Tests
       stages:
@@ -16,7 +17,6 @@ pipeline:
           steps:
             script:
               - echo "====++++executing Start tests++++===="
-              - echo "$BUILD_NUMBER"
               - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
                 script:
                   - sh 'npm run test::coverage'
