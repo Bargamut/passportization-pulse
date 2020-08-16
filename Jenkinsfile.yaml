@@ -22,7 +22,7 @@ pipeline:
           post:
             always:
               - echo "====++++Start tests execution always++++===="
-              - echo $BUILD_NUMBER
+              - echo "$BUILD_NUMBER"
             success:
               - echo "====++++Start tests execution successfully++++===="
             failure:
