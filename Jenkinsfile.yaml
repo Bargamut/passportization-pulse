@@ -27,8 +27,8 @@ pipeline:
             failure:
               - echo "====++++Start tests execution failed++++===="
     - stage: Build & deploy
-      when:
-        - branch 'master'
+      # when:
+        # - branch 'master'
       stages:
         - stage: Build Docker container
           steps:
