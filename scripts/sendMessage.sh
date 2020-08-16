@@ -1,6 +1,6 @@
 ls -lpha
 
-TEXT=$(envsubst < ./notifications/$1.md)
+TEXT=$(envsubst < ./scripts/notifications/$1.md)
 
 # TEXT=$(envsubst < ./notifications/success.md)
 
