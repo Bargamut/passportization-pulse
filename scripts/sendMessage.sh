@@ -1,4 +1,4 @@
-echo pwd
+ls -lpha
 
 TEXT=$(envsubst < ./notifications/$1.md)
 
