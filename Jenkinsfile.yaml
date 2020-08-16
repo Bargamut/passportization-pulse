@@ -9,7 +9,6 @@ pipeline:
   stages:
     - stage: Install
       steps:
-        - echo "$BUILD_NUMBER"
         - sh 'npm install'
     - stage: Tests
       stages:
@@ -49,7 +48,7 @@ pipeline:
               ]"
               script:
                 - echo "====++++Build & deploy notification SUCCESS++++===="
-                - sh 'scripts/notifications/deploy.sh "Passportization build & deploy **SUCCESS**"'
+                - sh 'scripts/sendMessage.sh "success"'
         failure:
           script:
             - withCredentials: "[
@@ -58,4 +57,4 @@ pipeline:
               ]"
               script:
                 - echo "====++++Build & deploy notification FAILURE++++===="
-                - sh 'scripts/notifications/deploy.sh "Passportization build & deploy **FAILURE**"'
+                - sh 'scripts/sendMessage.sh "failure"'
