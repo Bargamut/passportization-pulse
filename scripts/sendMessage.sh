@@ -1,3 +1,5 @@
+echo pwd
+
 TEXT=$(envsubst < ./notifications/$1.md)
 
 # TEXT=$(envsubst < ./notifications/success.md)

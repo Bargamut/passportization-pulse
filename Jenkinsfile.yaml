@@ -9,7 +9,7 @@ pipeline:
   stages:
     - stage: Install
       steps:
-        - sh 'npm install'
+        # - sh 'npm install'
     - stage: Tests
       stages:
         - stage: Start tests
@@ -18,7 +18,7 @@ pipeline:
               - echo "====++++executing Start tests++++===="
               - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
                 script:
-                  - sh 'npm run test::coverage'
+                  # - sh 'npm run test::coverage'
           post:
             always:
               - echo "====++++Start tests execution always++++===="
@@ -32,13 +32,13 @@ pipeline:
       stages:
         - stage: Build Docker container
           steps:
-            - sh 'scripts/build-container.sh'
+            # - sh 'scripts/build-container.sh'
         - stage: Delivery
           steps:
-            - sh 'scripts/delivery.sh'
+            # - sh 'scripts/delivery.sh'
         - stage: Clean Docker images
           steps:
-            - sh 'scripts/clean-images.sh'
+            # - sh 'scripts/clean-images.sh'
       post:
         success:
           script:
