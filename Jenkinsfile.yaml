@@ -16,13 +16,13 @@ pipeline:
           steps:
             script:
               - echo "====++++executing Start tests++++===="
+              - echo "$BUILD_NUMBER"
               - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
                 script:
                   - sh 'npm run test::coverage'
           post:
             always:
               - echo "====++++Start tests execution always++++===="
-              - echo "$BUILD_NUMBER"
             success:
               - echo "====++++Start tests execution successfully++++===="
             failure:
