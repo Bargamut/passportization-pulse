@@ -7,35 +7,35 @@ pipeline:
   tools:
     nodejs: NodeJS 13.12.0
   stages:
-    # - stage: Install
-    #   steps:
-    #     # - sh 'npm install'
-    # - stage: Tests
-    #   stages:
-    #     - stage: Start tests
-    #       steps:
-    #         script:
-    #           - echo "====++++executing Start tests++++===="
-    #           - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
-    #             script:
-    #               # - sh 'npm run test::coverage'
-    #       post:
-    #         always:
-    #           - echo "====++++Start tests execution always++++===="
-    #         success:
-    #           - echo "====++++Start tests execution successfully++++===="
-    #         failure:
-    #           - echo "====++++Start tests execution failed++++===="
-    - stage: Build & deploy
-      # when:
-        # - branch 'master'
+    - stage: Install
+      steps:
+        - sh 'npm install'
+    - stage: Tests
       stages:
-        # - stage: Build Docker container
-          # steps:
-            # - sh 'scripts/build-container.sh'
-        # - stage: Delivery
-        #   steps:
-        #     # - sh 'scripts/delivery.sh'
+        - stage: Start tests
+          steps:
+            script:
+              - echo "====++++executing Start tests++++===="
+              - withCredentials: "[string(credentialsId: 'COVERALLS_REPO_TOKEN', variable: 'COVERALLS_REPO_TOKEN')]"
+                script:
+                  - sh 'npm run test::coverage'
+          post:
+            always:
+              - echo "====++++Start tests execution always++++===="
+            success:
+              - echo "====++++Start tests execution successfully++++===="
+            failure:
+              - echo "====++++Start tests execution failed++++===="
+    - stage: Build & deploy
+      when:
+        - branch 'master'
+      stages:
+        - stage: Build Docker container
+          steps:
+            - sh 'scripts/build-container.sh'
+        - stage: Delivery
+          steps:
+            - sh 'scripts/delivery.sh'
         - stage: Clean Docker images
           steps:
             - sh 'scripts/clean-images.sh'
