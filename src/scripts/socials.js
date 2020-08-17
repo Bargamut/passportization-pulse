@@ -12,7 +12,7 @@ export const share2Socials = (socBtn) => {
 		v = encodeURIComponent('Bargamut');
 
 	var urls = {
-		vk: `//vkontakte.ru/share.php?url=${u}`,
+		vk: `//vkontakte.ru/share.php?url=${u}&image=${i}&description=${t}`,
 		fb: `//www.facebook.com/sharer.php?u=${u}&i=${i}&t=${t}`,
 		tw: `//twitter.com/intent/tweet?url=${u}&text=${ctw}&via=${v}`,
 		lj: `//www.livejournal.com/update.bml?event=${e}&subject=${t}`
