@@ -49,9 +49,9 @@
 	margin: 0 auto;
 	display: block;
 	background:
-		url('/assets/decor/star.png') left/1rem no-repeat,
-		url('/assets/decor/star.png') center/1.5rem no-repeat,
-		url('/assets/decor/star.png') right/1rem no-repeat;
+		url('/assets/decor/icons/star.png') left/1rem no-repeat,
+		url('/assets/decor/icons/star.png') center/1.5rem no-repeat,
+		url('/assets/decor/icons/star.png') right/1rem no-repeat;
 	position: absolute;
 	bottom: 0;
 	left: 0;
