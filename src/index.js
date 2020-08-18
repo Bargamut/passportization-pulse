@@ -1,3 +1,8 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import App from './components/App/App';
+
 import './style.css';
 import {
   fetchHelpers,
@@ -6,29 +11,34 @@ import {
 } from './scripts/helpers';
 import { share2Socials } from "./scripts/socials";
 
-(async () => {
-  const socialBarElement = document.querySelector(`.social-shares`);
+ReactDOM.render(
+  <App />,
+  document.querySelector(`.app`)
+);
 
-  socialBarElement.addEventListener(`click`, (evt) => {
-    if (!evt.target.classList.contains(`social-shares__link`)) return;
+// (async () => {
+//   const socialBarElement = document.querySelector(`.social-shares`);
 
-    evt.preventDefault();
+//   socialBarElement.addEventListener(`click`, (evt) => {
+//     if (!evt.target.classList.contains(`social-shares__link`)) return;
 
-    share2Socials(evt.target);
-  });
+//     evt.preventDefault();
 
-  const dataHelpersListElement = document.querySelector(`.data-helpers`);
-	const infoHelpersListElement = document.querySelector(`.info-helpers`);
+//     share2Socials(evt.target);
+//   });
 
-  dataHelpersListElement.append(
-    renderHumans(
-      await fetchHelpers(`/api/data-helpers.json`)
-    )
-  );
+//   const dataHelpersListElement = document.querySelector(`.data-helpers`);
+// 	const infoHelpersListElement = document.querySelector(`.info-helpers`);
 
-  infoHelpersListElement.append(
-    renderEvents(
-      await fetchHelpers(`/api/data-helpers__info.json`)
-    )
-  );
-})();
+//   dataHelpersListElement.append(
+//     renderHumans(
+//       await fetchHelpers(`/api/data-helpers.json`)
+//     )
+//   );
+
+//   infoHelpersListElement.append(
+//     renderEvents(
+//       await fetchHelpers(`/api/data-helpers__info.json`)
+//     )
+//   );
+// })();
