@@ -2,6 +2,8 @@ import * as React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import BodyPart from '../BodyPart/BodyPart';
+import CallToAction from '../CallToAction/CallToAction';
+import ButtonLink from '../Button/Button';
 
 const App = () => (
   // <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(47849594, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47849594" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
@@ -36,9 +38,7 @@ const App = () => (
 
         <p>У вас наверняка есть причины - поделитесь этим!</p>
 
-        <a className="button button--call2action" href="https://pulse.passportization.ru">
-          Пройти опрос
-        </a>
+        <CallToAction />
       </section>
 
       <hr className="break-line" />
@@ -71,9 +71,7 @@ const App = () => (
         <p>Все ответы анонимны.</p>
 
         <div className="call-to-action">
-          <a className="button button--call2action" href="https://pulse.passportization.ru">
-            Пройти опрос
-          </a>
+          <CallToAction />
         </div>
 
         <p>
@@ -97,17 +95,17 @@ const App = () => (
         </p>
 
         <div className="call-to-action">
-          <a className="button button--dark" href="https://t.me/bargamut" target="_blank">
+          <ButtonLink className="button--dark" href="https://t.me/bargamut" target="_blank">
             Telegram
-          </a>
+          </ButtonLink>
 
-          <a className="button button--dark" href="https://vk.bargamut.ru" target="_blank">
+          <ButtonLink className="button--dark" href="https://vk.bargamut.ru" target="_blank">
             ВКонтакте
-          </a>
+          </ButtonLink>
 
-          <a className="button button--dark" href="https://fb.bargamut.ru" target="_blank">
+          <ButtonLink className="button--dark" href="https://fb.bargamut.ru" target="_blank">
             Facebook
-          </a>
+          </ButtonLink>
         </div>
       </section>
 
