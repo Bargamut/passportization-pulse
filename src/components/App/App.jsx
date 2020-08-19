@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import BodyPart from '../BodyPart/BodyPart';
 
 const App = () => (
   // <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(47849594, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47849594" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
@@ -9,11 +10,7 @@ const App = () => (
     <Header />
 
     <main className="site-body">
-      <section className="body-part">
-        <h2 className="body-part__head">Что это?</h2>
-
-        <hr className="break-line" />
-
+      <BodyPart header="Что это?">
         <p>Проект частного исследования:</p>
 
         <p className="pulse-question">
@@ -23,7 +20,7 @@ const App = () => (
         <p>
           Это пробный выпуск, первый шаг для развития проекта ежегодного опроса среди сообщества реконструкторов - "Пульс паспортизации".
         </p>
-      </section>
+      </BodyPart>
 
       <hr className="break-line" />
 
@@ -46,11 +43,7 @@ const App = () => (
 
       <hr className="break-line" />
 
-      <section className="body-part">
-        <h2 className="body-part__head">Зачем?</h2>
-
-        <hr className="break-line" />
-
+      <BodyPart header="Зачем?">
         <ul className="items-list">
           <li className="items-list__item">
             Cобрать обезличенные данные о том, каким образом люди работают с паспортами комплектов.
@@ -68,13 +61,9 @@ const App = () => (
             Сделать на основе этого проекта ежегодный "пульс", более грамотный с точки зрения социологии. Сейчас проект в экспериментальном режиме.
           </li>
         </ul>
-      </section>
+      </BodyPart>
 
-      <section className="body-part">
-        <h2 className="body-part__head">А это безопасно?</h2>
-
-        <hr className="break-line" />
-
+      <BodyPart header="А это безопасно?">
         <p>Здесь не просят ваших имён, адрес, почту или номер телефона. Нет регистрирации и SMS.</p>
 
         <p>Есть только 15 вопросов.</p>
@@ -90,7 +79,7 @@ const App = () => (
         <p>
           Когда опрос закончится, все ответы будут сведены и опубликованы на отдельной странице в виде инфографики "о состоянии паспортизации в 2020 году" на сайте проекта.
         </p>
-      </section>
+      </BodyPart>
 
       <hr className="break-line" />
 
@@ -122,7 +111,7 @@ const App = () => (
         </div>
       </section>
 
-        <hr className="break-line" />
+      <hr className="break-line" />
 
       <section className="social-shares">
         {/* <!-- <img className="social-shares__image" src="assets/decor/icons/Share.svg"> --> */}
@@ -143,11 +132,7 @@ const App = () => (
 
       <hr className="break-line" />
 
-      <section className="body-part">
-        <h2 className="body-part__head">Помощники</h2>
-
-        <hr className="break-line" />
-
+      <BodyPart header="Помощники">
         <h3 className="body-part__subhead">Помощь в подготовке</h3>
 
         <ul className="project-helpers-list data-helpers"></ul>
@@ -157,7 +142,7 @@ const App = () => (
         <h3 className="body-part__subhead">Информационная поддержка</h3>
 
         <ul className="project-helpers-list info-helpers"></ul>
-      </section>
+      </BodyPart>
     </main>
 
     <hr className="break-line" />
