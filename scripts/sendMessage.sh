@@ -28,4 +28,4 @@ wget \
         \"parse_mode\": \"markdown\",
         \"text\": \"$TEXT\"
 }" \
-   $URL
+  $URL

@@ -1,5 +1,5 @@
 export const fetchHelpers = async (url) => {
-	const fetchHelpers = await fetch(url);
+  const fetchHelpers = await fetch(url);
   const helpersData = await fetchHelpers.json();
 
   return helpersData;
@@ -19,8 +19,8 @@ export const renderHumans = (data) => {
 
     itemElement.classList.add(`project-helpers-list__item`);
 
-		itemElement.innerHTML = `
-				<a class="project-helpers-list__link" href="${item.socials.vk}">
+    itemElement.innerHTML = `
+        <a class="project-helpers-list__link" href="${item.socials.vk}">
           <div class="project-helpers-list__image-wrapper">
             <img class="project-helpers-list__image" src="${item.avatar.image}">
           </div>
@@ -28,8 +28,8 @@ export const renderHumans = (data) => {
           ${fullName}
         </a>`;
 
-		docFragment.append(itemElement);
-	});
+    docFragment.append(itemElement);
+  });
 
   return docFragment;
 };
@@ -44,8 +44,8 @@ export const renderEvents = (data) => {
 
     itemElement.classList.add(`project-helpers-list__item`);
 
-		itemElement.innerHTML = `
-				<a class="project-helpers-list__link" href="${item.socials.vk}">
+    itemElement.innerHTML = `
+        <a class="project-helpers-list__link" href="${item.socials.vk}">
           <div class="project-helpers-list__image-wrapper">
             <img class="project-helpers-list__image" src="${item.avatar.image}">
           </div>
@@ -55,8 +55,8 @@ export const renderEvents = (data) => {
           <p class="project-helpers-list__description">${item.description}</p>
         </a>`;
 
-		docFragment.append(itemElement);
-	});
+    docFragment.append(itemElement);
+  });
 
-	return docFragment;
+  return docFragment;
 };

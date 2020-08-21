@@ -1,13 +1,13 @@
 .items-list {
-	padding: 0 1rem;
-	list-style: none;
+  padding: 0 1rem;
+  list-style: none;
 }
 
 .items-list__item {
-	margin: 1rem 0;
-	padding-left: 2rem;
-	background-image: url('/assets/decor/icons/hat.png');
-	background-position: 0 0;
-	background-size: 1.6rem 1.6rem;
-	background-repeat: no-repeat;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  background-image: url('/assets/decor/icons/hat.png');
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
 }

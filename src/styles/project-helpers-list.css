@@ -1,18 +1,18 @@
 .project-helpers-list {
-	padding: 0;
-	list-style: none;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .project-helpers-list__item {
-	margin: 15px 0;
-	padding: 5px;
-	text-align: center;
-	flex-basis: 200px;
-	flex-grow: 1;
-	border-bottom: 1px solid var(--bg-color);
+  margin: 15px 0;
+  padding: 5px;
+  text-align: center;
+  flex-basis: 200px;
+  flex-grow: 1;
+  border-bottom: 1px solid var(--bg-color);
 }
 
 .project-helpers-list__title {
@@ -24,36 +24,36 @@
 }
 
 .project-helpers-list__link {
-	text-decoration: none;
+  text-decoration: none;
   display: block;
   color: var(--main-color);
 }
 
 .project-helpers-list__image {
-	margin-bottom: 10px;
-	width: 50px;
+  margin-bottom: 10px;
+  width: 50px;
   height: 50px;
-	border-radius: 50%;
-	vertical-align: middle;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 .project-helpers-list__image-wrapper {
-	position: relative;
-	filter: drop-shadow(0 0 3px);
+  position: relative;
+  filter: drop-shadow(0 0 3px);
 }
 
 .project-helpers-list__image-wrapper:before {
-	content: '';
-	height: 30px;
-	width: 50px;
-	margin: 0 auto;
-	display: block;
-	background:
-		url('/assets/decor/icons/star.png') left/1rem no-repeat,
-		url('/assets/decor/icons/star.png') center/1.5rem no-repeat,
-		url('/assets/decor/icons/star.png') right/1rem no-repeat;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+  content: '';
+  height: 30px;
+  width: 50px;
+  margin: 0 auto;
+  display: block;
+  background:
+    url('/assets/decor/icons/star.png') left/1rem no-repeat,
+    url('/assets/decor/icons/star.png') center/1.5rem no-repeat,
+    url('/assets/decor/icons/star.png') right/1rem no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
