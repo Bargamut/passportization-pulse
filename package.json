@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "lint::editorconfig": "editorconfig-checker -exclude '.git|node_modules|.DS_Store'",
-    "test": "jest",
+    "lint": "npm run lint::editorconfig",
+    "test": "npm run lint && jest",
     "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
