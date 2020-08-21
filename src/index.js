@@ -18,7 +18,7 @@ import { share2Socials } from "./scripts/socials";
   });
 
   const dataHelpersListElement = document.querySelector(`.data-helpers`);
-	const infoHelpersListElement = document.querySelector(`.info-helpers`);
+  const infoHelpersListElement = document.querySelector(`.info-helpers`);
 
   dataHelpersListElement.append(
     renderHumans(

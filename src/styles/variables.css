@@ -1,13 +1,13 @@
 :root {
-	/*
-		Color Scheme
-		https://colorscheme.ru/#3F32igtu3w0w0
-	*/
-	--main-color: #1B3A67;
-	--color-1: #54729E;
+  /*
+    Color Scheme
+    https://colorscheme.ru/#3F32igtu3w0w0
+  */
+  --main-color: #1B3A67;
+  --color-1: #54729E;
   --color-2: #B16C70;
   --color-3: #ffd300;
-	--bg-color: #e4e6e9;
-	--b-color: #99AFCF;
-	--b-color-2: #99AFCF;
+  --bg-color: #e4e6e9;
+  --b-color: #99AFCF;
+  --b-color-2: #99AFCF;
 }

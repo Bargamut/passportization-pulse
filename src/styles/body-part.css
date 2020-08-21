@@ -1,23 +1,23 @@
 .body-part {
-	position: relative;
-	margin: 10px 0;
-	padding: 10px 20px;
-	background-color: #fff;
-	border: 1px solid var(--b-color-2);
-	border-radius: 5px;
+  position: relative;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid var(--b-color-2);
+  border-radius: 5px;
 }
 
 .body-part__head {
-	margin-left: 30px;
-	font-family: 'Google Sans', Roboto, Arial, sans-serif;
-	font-weight: normal;
+  margin-left: 30px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-weight: normal;
 }
 
 .body-part__subhead {
-	font-weight: normal;
-	text-align: center;
+  font-weight: normal;
+  text-align: center;
 }
 
 .body-part__content {
-	padding: 0 30px;
+  padding: 0 30px;
 }

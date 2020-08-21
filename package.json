@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "lint::editorconfig": "editorconfig-checker -exclude '.git|node_modules|.DS_Store'",
     "test": "jest",
     "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
     "dev": "webpack-dev-server --mode development --open",
@@ -22,6 +23,7 @@
     "babel-loader": "^8.0.5",
     "coveralls": "3.1.0",
     "css-loader": "^2.1.0",
+    "editorconfig-checker": "3.1.0",
     "jest": "26.3.0",
     "mini-css-extract-plugin": "^0.5.0",
     "path": "^0.12.7",

@@ -1,26 +1,26 @@
 .site-header {
-	padding: 5px 15px;
-	background: var(--main-color) url("/assets/decor/bg-header.png") 100%/cover no-repeat;
-	text-align: center;
-	color: #fff;
-	border: 1px solid var(--b-color-2);
-	border-radius: 0 0 5px 5px;
-	border-top: 0;
-	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
+  padding: 5px 15px;
+  background: var(--main-color) url("/assets/decor/bg-header.png") 100%/cover no-repeat;
+  text-align: center;
+  color: #fff;
+  border: 1px solid var(--b-color-2);
+  border-radius: 0 0 5px 5px;
+  border-top: 0;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
 }
 
 .site-header__title {
-	font-family: 'Google Sans', Roboto, Arial, sans-serif;
-	font-weight: normal;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-weight: normal;
 }
 
 .site-body {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .site-footer {
-	margin-top: 20px;
-	padding: 25px 15px 50px;
-	color: var(--main-color);
-	text-align: right;
+  margin-top: 20px;
+  padding: 25px 15px 50px;
+  color: var(--main-color);
+  text-align: right;
 }
