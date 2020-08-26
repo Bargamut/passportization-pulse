@@ -4,11 +4,6 @@ import * as ReactDOM from 'react-dom';
 import App from './components/App/App';
 
 import './style.css';
-import {
-  fetchHelpers,
-  renderHumans,
-  renderEvents,
-} from './scripts/helpers';
 import { share2Socials } from "./scripts/socials";
 
 ReactDOM.render(
