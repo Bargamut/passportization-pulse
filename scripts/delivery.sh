@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER_OPTIONS='-d -p 3001:80' # $1
+CONTAINER_OPTIONS='-d -p 3001:80 --restart=always' # $1
 CONTAINER_NAME='passportization-site' # $2
 IMAGE_NAME='bargamut/passportization-site:latest' # $3
 

@@ -1,6 +1,6 @@
 ### STAGE 1: Build ###
 
-FROM node:13.10.1-alpine as builder
+FROM node:current-alpine as builder
 
 LABEL maintainer="Paul Petrov (paul@bargamut.ru)"
 
@@ -21,7 +21,7 @@ RUN npm run build
 
 ### STAGE 2: Setup ###
 
-FROM nginx:1.14-alpine
+FROM nginx:stable-alpine
 
 LABEL maintainer="Paul Petrov (paul@bargamut.ru)"
 
