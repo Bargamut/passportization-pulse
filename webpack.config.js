@@ -34,7 +34,7 @@ let conf = {
 		rules: [
 			// Подключение Babel загрузчика
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				loader: 'babel-loader',
 				exclude: /node_modules/
 			},
@@ -51,7 +51,10 @@ let conf = {
 				]
 			}
 		]
-	},
+  },
+  resolve: {
+    extensions: [ `.js`, `.jsx`, `.json` ],
+  },
 	plugins: [
 		new MiniCssExtractPlugin({
       filename: '[name].css',
