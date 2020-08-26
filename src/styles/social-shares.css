@@ -8,7 +8,7 @@
 .social-shares__link {
   width: 50px;
   height: 50px;
-	text-decoration: none;
+  text-decoration: none;
   display: block;
   font-size: 0;
   background-position: center;
@@ -25,6 +25,6 @@
 .social-icon__tw { background-image: url('/assets/decor/icons/socials/Twitter.svg'); }
 
 .social-shares__description {
-	font-weight: normal;
-	color: black;
+  font-weight: normal;
+  color: black;
 }

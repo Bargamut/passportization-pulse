@@ -1,19 +1,19 @@
 .pulse-balance {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .pulse-balance__item {
-	padding: 10px;
-	width: 40%;
+  padding: 10px;
+  width: 40%;
   background: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .balance-item__left {
-	color: #489237;
+  color: #489237;
 }
 
 .balance-item__right {
-	color: var(--color-2);
+  color: var(--color-2);
 }

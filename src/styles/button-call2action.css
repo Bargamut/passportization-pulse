@@ -1,13 +1,13 @@
 .button--call2action {
-	background-color: var(--color-3);
+  background-color: var(--color-3);
   background-image:
     linear-gradient(100deg, transparent 5%, #fff7 17%, transparent 20%),
     linear-gradient(100deg, transparent 10%, #fff3 30%, transparent 40%);
-	background-repeat: no-repeat;
-	background-size: 200px 50px;
-	background-position: 100% 0;
-	color: black;
-	animation: 11s 3s button-blick cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+  background-repeat: no-repeat;
+  background-size: 200px 50px;
+  background-position: 100% 0;
+  color: black;
+  animation: 11s 3s button-blick cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
 }
 
 @keyframes button-blick {
