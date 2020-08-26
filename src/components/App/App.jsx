@@ -8,11 +8,13 @@ import ButtonLink from '../Button/Button';
 
 const App = () => (
   <>
-    <YMInitializer
-      accounts={[ 47849594 ]}
-      options={{ clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }}
-      version="2"
-    />
+    {process.env.NODE_ENV === `production` &&
+      <YMInitializer
+        accounts={[ 47849594 ]}
+        options={{ clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }}
+        version="2"
+      />
+    }
 
     <div className="wrapper">
       <Header />
@@ -118,8 +120,6 @@ const App = () => (
         <hr className="break-line" />
 
         <section className="social-shares">
-          {/* <!-- <img className="social-shares__image" src="assets/decor/icons/Share.svg"> --> */}
-
           <h3 className="social-shares__title">Самый простой способ поддержать</h3>
 
           <p className="social-shares__description">
