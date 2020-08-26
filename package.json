@@ -12,7 +12,7 @@
     "lint": "npm run lint::editorconfig",
     "test": "npm run lint && jest",
     "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --open --host 0.0.0.0",
     "build": "webpack --mode production"
   },
   "devDependencies": {

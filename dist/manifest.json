@@ -1,5 +1,7 @@
 {
   "name": "Пульс Паспортизации",
+  "background_color": "#1B3A67",
+  "theme_color": "#1B3A67",
   "icons": [{
       "src": "\/assets\/favicon\/android-icon-36x36.png",
       "sizes": "36x36",
