@@ -1,4 +1,4 @@
-.project-helpers-list {
+.cards-list {
 	padding: 0;
 	list-style: none;
 	display: flex;
@@ -6,7 +6,7 @@
 	justify-content: space-between;
 }
 
-.project-helpers-list__item {
+.cards-list__item {
 	margin: 15px 0;
 	padding: 5px;
 	text-align: center;
@@ -15,21 +15,21 @@
 	border-bottom: 1px solid var(--bg-color);
 }
 
-.project-helpers-list__title {
+.cards-list__title {
   margin: 5px 0;
 }
 
-.project-helpers-list__description {
+.cards-list__description {
   font-size: .85rem;
 }
 
-.project-helpers-list__link {
+.cards-list__link {
 	text-decoration: none;
   display: block;
   color: var(--main-color);
 }
 
-.project-helpers-list__image {
+.cards-list__image {
 	margin-bottom: 10px;
 	width: 50px;
   height: 50px;
@@ -37,12 +37,12 @@
 	vertical-align: middle;
 }
 
-.project-helpers-list__image-wrapper {
+.cards-list__image-wrapper {
 	position: relative;
 	filter: drop-shadow(0 0 3px);
 }
 
-.project-helpers-list__image-wrapper:before {
+.cards-list__image-wrapper:before {
 	content: '';
 	height: 30px;
 	width: 50px;

@@ -6,6 +6,10 @@ import BodyPart from '../BodyPart/BodyPart';
 import BodyCall from '../BodyCall/BodyCall';
 import CallToAction from '../CallToAction/CallToAction';
 import ButtonLink from '../Button/Button';
+import CardsList from '../CardsList/CardsList';
+
+import HumansData from '../../providers/humans-data';
+import PublicsData from '../../providers/publics-data';
 
 const App = () => (
   <>
@@ -130,13 +134,13 @@ const App = () => (
         <BodyPart header="Помощники">
           <h3 className="body-part__subhead">Помощь в подготовке</h3>
 
-          <ul className="project-helpers-list data-helpers"></ul>
+          <CardsList provider={new HumansData()} />
 
           <hr className="break-line" />
 
           <h3 className="body-part__subhead">Информационная поддержка</h3>
 
-          <ul className="project-helpers-list info-helpers"></ul>
+          <CardsList provider={new PublicsData()} mode="public" />
         </BodyPart>
       </main>
 
