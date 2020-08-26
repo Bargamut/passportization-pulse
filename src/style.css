@@ -2,12 +2,11 @@
 @import './styles/commons.css';
 @import './styles/site.css';
 @import './styles/body-part.css';
+@import './styles/body-call.css';
 @import './styles/items-list.css';
 @import './styles/button.css';
 @import './styles/button-call2action.css';
-@import './styles/pulse-call.css';
 @import './styles/pulse-balance.css';
-@import './styles/project-helpers-list.css';
-@import './styles/become-helper.css';
+@import './styles/cards-list.css';
 @import './styles/social-shares.css';
 @import './styles/pulse-beat.css';

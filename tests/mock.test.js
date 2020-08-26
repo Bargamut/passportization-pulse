@@ -1,4 +1,4 @@
-import * as helpers from '../src/scripts/helpers';
+import HumansData from '../src/providers/humans-data';
 
 const mock = {
   events: [{
@@ -16,9 +16,7 @@ const mock = {
 };
 
 it(`should be truly`, () => {
-  const result = helpers.renderEvents(mock.events);
+  const humansData = mock;
 
-  const blockTitleElement = result.querySelector(`.project-helpers-list__title`);
-
-  expect(blockTitleElement.textContent).toBe(`Hello, World!`);
+  expect(humansData.events[0].title).toBe(`Hello, World!`);
 });

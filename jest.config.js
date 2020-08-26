@@ -23,12 +23,12 @@ module.exports = {
     `text-lcov`,
     `lcov`,
   ],
-  coverageThreshold: {
-    global: {
-      lines: 10,
-      statements: 10,
-      functions: 10,
-      branches: 10,
-    },
-  },
+  // coverageThreshold: {
+  //   global: {
+  //     lines: 10,
+  //     statements: 10,
+  //     functions: 10,
+  //     branches: 10,
+  //   },
+  // },
 };
