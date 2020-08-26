@@ -3,6 +3,7 @@ import { YMInitializer } from 'react-yandex-metrika';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import BodyPart from '../BodyPart/BodyPart';
+import BodyCall from '../BodyCall/BodyCall';
 import CallToAction from '../CallToAction/CallToAction';
 import ButtonLink from '../Button/Button';
 
@@ -34,11 +35,7 @@ const App = () => (
 
         <hr className="break-line" />
 
-        <section className="body-call pulse-call">
-          <img className="body-call__image" src="/assets/decor/icons/vesy.png" />
-
-          <h3 className="body-call__head">Ваш опыт ценен!</h3>
-
+        <BodyCall header="Ваш опыт ценен!" image="/assets/decor/icons/vesy.png">
           <div className="pulse-balance">
             <div className="pulse-balance__item balance-item__left">Пишете паспорта?</div>
             <div className="pulse-balance__item balance-item__right">Отказались от них?</div>
@@ -47,7 +44,7 @@ const App = () => (
           <p>У вас наверняка есть причины - поделитесь этим!</p>
 
           <CallToAction />
-        </section>
+        </BodyCall>
 
         <hr className="break-line" />
 
@@ -89,11 +86,7 @@ const App = () => (
 
         <hr className="break-line" />
 
-        <section className="body-call become-helper">
-          <img className="body-call__image" src="assets/decor/icons/lamp.svg" />
-
-          <h3 className="body-call__head">Знаете что можно улучшить?</h3>
-
+        <BodyCall header="Знаете что можно улучшить?" image="/assets/decor/icons/lamp.svg" >
           <p>
             Проект молодой и ему важна ваша поддержка.
           </p>
@@ -115,24 +108,22 @@ const App = () => (
               Facebook
             </ButtonLink>
           </div>
-        </section>
+        </BodyCall>
 
         <hr className="break-line" />
 
-        <section className="social-shares">
-          <h3 className="social-shares__title">Самый простой способ поддержать</h3>
-
-          <p className="social-shares__description">
+        <BodyCall header="Самый простой способ поддержать">
+          <p>
             Поделитесь этим сайтом с коллегами-реконструкторами: чем больше реконструкторов примет участие,
             тем достовернее будет результат.
           </p>
 
-          <div className="social-shares__link-wrapper">
+          <div className="social-shares">
             <a className="social-shares__link social-icon__vk" data-soc="vk" title="Поделиться ВКонтакте" href="#">Поделиться ВКонтакте</a>
             <a className="social-shares__link social-icon__fb" data-soc="fb" title="Поделиться в Facebook" href="#">Поделиться в Facebook</a>
             <a className="social-shares__link social-icon__tw" data-soc="tw" title="Поделиться в Twitter" href="#">Поделиться в Twitter</a>
           </div>
-        </section>
+        </BodyCall>
 
         <hr className="break-line" />
 
