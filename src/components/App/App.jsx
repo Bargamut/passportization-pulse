@@ -7,6 +7,7 @@ import BodyCall from '../BodyCall/BodyCall';
 import CallToAction from '../CallToAction/CallToAction';
 import ButtonLink from '../Button/Button';
 import CardsList from '../CardsList/CardsList';
+import SocialsShare from '../SocialsShare/SocialsShare';
 
 import HumansData from '../../providers/humans-data';
 import PublicsData from '../../providers/publics-data';
@@ -122,11 +123,7 @@ const App = () => (
             тем достовернее будет результат.
           </p>
 
-          <div className="social-shares">
-            <a className="social-shares__link social-icon__vk" data-soc="vk" title="Поделиться ВКонтакте" href="#">Поделиться ВКонтакте</a>
-            <a className="social-shares__link social-icon__fb" data-soc="fb" title="Поделиться в Facebook" href="#">Поделиться в Facebook</a>
-            <a className="social-shares__link social-icon__tw" data-soc="tw" title="Поделиться в Twitter" href="#">Поделиться в Twitter</a>
-          </div>
+          <SocialsShare />
         </BodyCall>
 
         <hr className="break-line" />
