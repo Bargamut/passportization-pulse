@@ -29,34 +29,34 @@ let conf = {
         },
       }
     }
-	},
-	module: {
-		rules: [
-			// Подключение Babel загрузчика
-			{
-				test: /\.(js|jsx)$/,
-				loader: 'babel-loader',
-				exclude: /node_modules/
-			},
-			{
-				test: /\.css$/,
-				use: [{
+  },
+  module: {
+    rules: [
+      // Подключение Babel загрузчика
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [{
             loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: isDevMode,
               esModule: true,
             }
-					},
-					"css-loader"
-				]
-			}
-		]
+          },
+          "css-loader"
+        ]
+      }
+    ]
   },
   resolve: {
     extensions: [ `.js`, `.jsx`, `.json` ],
   },
-	plugins: [
-		new MiniCssExtractPlugin({
+  plugins: [
+    new MiniCssExtractPlugin({
       filename: '[name].css',
     })
   ]
