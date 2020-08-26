@@ -34,10 +34,10 @@ const App = () => (
 
         <hr className="break-line" />
 
-        <section className="pulse-call">
-          <img className="pulse-call__image" src="/assets/decor/icons/vesy.png" />
+        <section className="body-call pulse-call">
+          <img className="body-call__image" src="/assets/decor/icons/vesy.png" />
 
-          <h3 className="pulse-call__head">Ваш опыт ценен!</h3>
+          <h3 className="body-call__head">Ваш опыт ценен!</h3>
 
           <div className="pulse-balance">
             <div className="pulse-balance__item balance-item__left">Пишете паспорта?</div>
@@ -89,10 +89,10 @@ const App = () => (
 
         <hr className="break-line" />
 
-        <section className="become-helper">
-          <img className="become-helper__image" src="assets/decor/icons/lamp.svg" />
+        <section className="body-call become-helper">
+          <img className="body-call__image" src="assets/decor/icons/lamp.svg" />
 
-          <h3 className="become-helper__title">Знаете что можно улучшить?</h3>
+          <h3 className="body-call__head">Знаете что можно улучшить?</h3>
 
           <p>
             Проект молодой и ему важна ваша поддержка.
