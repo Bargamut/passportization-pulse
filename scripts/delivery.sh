@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# NOTE: move all variables to env?
+
 CONTAINER_OPTIONS='-d -p 3002:80 --restart=always' # $1
 CONTAINER_NAME='passportization-pulse-site' # $2
 IMAGE_NAME='bargamut/passportization-pulse-site:latest' # $3
