@@ -1,6 +1,6 @@
-🚨🔀 #PRMergeFailure #Passportization🚨
+🚨🔀 #PRMergeFailure #PassportizationPulse🚨
 
-*PROJECT:* [Passportization]($GIT_URL)\
+*PROJECT:* [Passportization Pulse]($GIT_URL)\
 *BRANCH:* $GIT_BRANCH ($GIT_COMMIT)\
 *PIPELINE:* [№ $BUILD_NUMBER]($BUILD_URL)
 

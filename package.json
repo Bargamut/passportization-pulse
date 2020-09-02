@@ -1,9 +1,9 @@
 {
-  "name": "passportization",
+  "name": "passportization-pulse-site",
   "version": "1.0.0",
   "description": "Сайт пасспортизации реконструируемых комплексов",
   "main": "index.js",
-  "repository": "git@bitbucket.org:Bargamut/passportization.git",
+  "repository": "git@bitbucket.org:Bargamut/passportization-pulse.git",
   "author": "Paul Petrov <paul@bargamut.ru>",
   "license": "MIT",
   "private": true,
